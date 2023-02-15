@@ -749,6 +749,23 @@ section.num-teeth .content input[type=checkbox]:nth-of-type(32) {
   background-color: #ffc107 !important;
 }
 
+.alt-bg-color {
+  background-color: #09adce;
+}
+
+.color-gr {
+  color: #2ba670;
+}
+
+.right-b {
+  border-right: 1px solid #d5d3d3;
+  padding-right: 4px;
+}
+
+.alt-text-color {
+  color: #09adce !important;
+}
+
 .top-nav {
   background-color: #09adce;
   color: white;
@@ -1538,7 +1555,7 @@ section.page-404 .text {
 
 .boxes-info-5 {
   display: grid;
-  gap: 24px;
+  gap: 15px;
 }
 @media (min-width: 768px) {
   .boxes-info-5 {

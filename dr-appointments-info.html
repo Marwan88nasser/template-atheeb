@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المرضى</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main Faile Css  -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start Top Nav Bar -->
+  <nav class="top-nav not-print py-2">
+    <div class="container">
+      <a href="#" class="tog-show" data-show=".top-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+      <ul class="d-flex gap-3 align-items-center flex-grow-1 justify-content-end">
+        <li>
+          <a href="#" class="d-flex">
+            <i class="fa-solid fa-language fs-5"></i>
+          </a>
+        </li>
+        <li>
+          <div class="dropdown-hover" data-show="dropdown-lang">
+            <div class="icon-drop">
+              <i class="fa-solid fa-user icon"></i>
+            </div>
+            <p class="text">محمد السيد</p>
+            <div class="arrow-icon">
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <ul class="listis-item" id="dropdown-lang">
+              <li class="item-drop">
+                <a href="#">
+                  <form class="w-100" action="" method="" id="logout-form">
+                    <button class="border-0 bg-transparent p-0">
+                      <p class="text  d-flex">تسجيل الخروج</p>
+                    </button>
+                  </form>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Top Nav Bar -->
+  <!-- Start Bottom Nav Bar -->
+  <nav class="bottom-nav">
+    <div class="container">
+      <a href="#" class="tog-show" data-show=".bottom-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+      <ul class="list-item">
+        <li>
+          <a class="item" href="dr-home.html">
+            الرئيسية
+            <i class="i-item fa-solid fa-house"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="item" href="dr-patients.html">
+            المرضى
+            <i class="i-item fa-solid fa-bed-pulse"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="#">
+            واجهة الطبيب
+            <i class="i-item fa-solid fa-stethoscope"></i>
+          </a>
+        </li>
+
+        <li>
+          <a class="item" href="#">
+            مواعيد اليوم
+            <i class="i-item fa-solid fa-calendar-days"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="#">
+            المواعيد
+            <i class="i-item fa-solid fa-calendar-days"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="#">
+            بيانات المواعيد
+            <i class="i-item fa-solid fa-calendar-days"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="#">
+            الفواتير
+            <i class="i-item fa-solid fa-file-invoice"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="#">
+            التقارير
+            <i class="i-item fa-solid fa-file-invoice"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="#">
+            مواعيد اليوم
+            <i class="i-item fa-solid fa-hospital-user"></i>
+            <div class="badge-count">
+              0
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Bottom Nav Bar -->
+  <!-- Start Section -->
+  <section class="table-color main-section">
+    <div class="container">
+      <h4 class="main-heading mb-4">بيانات المواعيد</h4>
+      <div class="section-content box-content">
+        <div class="row g-2 mb-3">
+          <div class="col-12 d-flex align-items-center">
+            <div class="status d-flex align-items-end flex-wrap gap-1">
+              <div class="box d-flex ms-2 align-content-center align-items-center">
+                <div class="color one ms-1"></div>
+                <div class="text"><b>متاح:</b> -3</div>
+              </div>
+              <div class="box d-flex ms-2 align-content-center align-items-center">
+                <div class="color two ms-1"></div>
+                <div class="text"><b>محجوز:</b>
+                  0</div>
+              </div>
+              <div class="box d-flex ms-2 align-content-center align-items-center">
+                <div class="color three ms-1"></div>
+                <div class="text"><b>المتواجدين:</b>
+                  0</div>
+              </div>
+              <div class="box d-flex ms-2 align-content-center align-items-center">
+                <div class="color six ms-1"></div>
+                <div class="text"><b>المحولين:</b>
+                  2</div>
+              </div>
+              <div class="box d-flex ms-2 align-content-center align-items-center">
+                <div class="color five ms-1"></div>
+                <div class="text"><b>حضر:</b>
+                  0</div>
+              </div>
+              <div class="box d-flex align-content-center align-items-center">
+                <div class="color four ms-1"></div>
+                <div class="text"><b>لم يحضر:</b>
+                  1</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9">
+            <div class="d-flex flex-wrap flex-sm-nowrap align-items-center gap-4">
+              <div dir="ltr" class="input-group">
+                <input dir="rtl" type="date" class="form-control">
+                <span class="input-group-text" style="font-size: .8rem;" id="basic-addon2">من</span>
+              </div>
+              <div dir="ltr" class="input-group">
+                <input dir="rtl" type="date" class="form-control">
+                <span class="input-group-text" style="font-size: .8rem;" id="basic-addon2">الى</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-1">
+            <div>
+              <select name="" id="" class="form-control">
+                <option value="" disabled="" selected="">أختر الفترة</option>
+                <option value="morning">الصباحية</option>
+                <option value="evening">المسائية</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-4 col-lg-2">
+            <table class="table main-table special-table">
+              <thead>
+                <tr>
+                  <th class="text-center">صالة الانتظار</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">
+                    <b>صالة الانتظار</b>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-8 col-lg-10">
+            <div class="table-responsive">
+              <table class="table main-table special-table">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <div class="top_word text-center"></div>
+                      <div class="bottom_word text-center"></div>
+                    </th>
+                    <th scope="col">
+                      <div class="top_word text-center">
+                        Monday
+                      </div>
+                      <div class="bottom_word text-center text-center">
+                        2023-02-13
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="top_word text-center">
+                        Tuesday
+                      </div>
+                      <div class="bottom_word text-center text-center">
+                        2023-02-14
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="top_word text-center">
+                        Wednesday
+                      </div>
+                      <div class="bottom_word text-center text-center">
+                        2023-02-15
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="top_word text-center">
+                        Thursday
+                      </div>
+                      <div class="bottom_word text-center text-center">
+                        2023-02-16
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="top_word text-center">
+                        Friday
+                      </div>
+                      <div class="bottom_word text-center text-center">
+                        2023-02-17
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="top_word text-center">
+                        Saturday
+                      </div>
+                      <div class="bottom_word text-center text-center">
+                        2023-02-18
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="top_word text-center">
+                        Sunday
+                      </div>
+                      <div class="bottom_word text-center text-center">
+                        2023-02-19
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section -->
+  <!-- Start Footer -->
+  <div class="footer-bottom py-3 not-print">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <p>جميع الحقوق محفوظة © لـ 2022</p>
+        <div class="about_data d-flex align-items-center justify-content-center">
+          <p class="ms-2">برنامج سي - إدارة العيادات الطبية 0.0.1</p>
+          <img class="alt_image" src="./img/footer/doc.png" alt="image">
+        </div>
+        <a href="https://www.const-tech.org/">
+          <img src="./img/footer/copy.png" alt="logo">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- ENd Footer -->
+  <!-- Js Files -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

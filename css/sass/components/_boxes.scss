@@ -72,7 +72,7 @@
 // boxes-info5
 .boxes-info-5 {
   display: grid;
-  gap: 24px;
+  gap: 15px;
   @include minWidth(md) {
     grid-template-columns: repeat(2, 1fr);
   }
