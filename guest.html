@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حجز موعد لزائر</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main Faile Css  -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start Top Nav Bar -->
+  <nav class="top-nav not-print">
+    <div class="container">
+      <a href="#" class="tog-show" data-show=".top-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+      <ul class="list-item">
+        <li>
+          <a href="" class="d-flex">
+            الاقسام
+          </a>
+        </li>
+        <li>
+          <a href="" class="d-flex">
+            العروض
+          </a>
+        </li>
+        <li>
+          <a href="" class="d-flex">
+            النماذج الطبية
+          </a>
+        </li>
+        <li>
+          <a href="" class="d-flex">
+            الخدمات
+          </a>
+        </li>
+        <li>
+          <div class="dropdown-hover item">
+            <a class="d-flex">
+              المصاريف
+              <div class="arrow-icon me-1">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </a>
+            <ul class="listis-item " id="dropdown-lang">
+              <li class="item-drop">
+                <a href="">
+                  <p class="text">المصاريف</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="">
+                  <p class="text">أقسام المصاريف</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="" class="d-flex">
+            المشتريات
+          </a>
+        </li>
+        <li>
+          <a href="" class="d-flex">
+            أضافة فاتورة
+          </a>
+        </li>
+        <li>
+          <a href="" class="d-flex">
+            المرضى المحولين
+            <div class="badge-count me-1 mb-1">0</div>
+          </a>
+        </li>
+        <li>
+          <div class="dropdown-hover item">
+            <a class="d-flex">
+              المحاسبة
+              <div class="arrow-icon me-1">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </a>
+            <ul class="listis-item " id="dropdown-lang">
+              <li class="item-drop">
+                <a href="">
+                  <p class="text">كشف حساب عام</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="">
+                  <p class="text">تقرير الخزينة</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="">
+                  <p class="text">تقرير العيادة و الدكتور</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="">
+                  <p class="text">تقرير المريض</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="">
+                  <p class="text">تقرير موظفي الاستقبال</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="">
+                  <p class="text">تقرير شركات التأمين</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="">
+                  <p class="text">تقرير المشتريات</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="">
+                  <p class="text">تقرير المصروفات</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="">
+                  <p class="text"> الرواتب</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="dropdown-hover" data-show="dropdown-lang">
+        <div class="icon-drop">
+          <i class="fa-solid fa-user icon"></i>
+        </div>
+        <p class="text">الاستقبال</p>
+        <div class="arrow-icon">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <ul class="listis-item" id="dropdown-lang">
+          <li class="item-drop">
+            <a href="#">
+              <p class="text">
+                <form class="w-100" action="" method="" id="logout-form">
+                  <button class="border-0 bg-transparent p-0">
+                    <p class="text">تسجيل الخروج</p>
+                  </button>
+                </form>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Top Nav Bar -->
+  <!-- Start Bottom Nav Bar -->
+  <nav class="bottom-nav not-print">
+    <div class="container">
+      <a href="#" class="tog-show" data-show=".bottom-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+      <div class="nav-holder d-flex align-items-center justify-content-between">
+        <ul class="list-item">
+          <li>
+            <a class="item" href="index.html">
+              الرئيسية
+              <i class="i-item fa-solid fa-house"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="addPatient.html">
+              اضافة مريض
+              <i class="i-item fa-solid fa-syringe"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="patients.html">
+              المرضى
+              <i class="i-item fa-solid fa-users"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="">
+              المواعيد
+              <i class="i-item fa-solid fa-calendar-days"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="">
+              بيانات المواعيد
+              <i class="i-item fa-solid fa-calendar-days"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="">
+              الفواتير
+              <i class="i-item fa-solid fa-file-invoice"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="">
+              التشخيصات
+              <i class="i-item fa-solid fa-money-check-dollar"></i>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="">
+              الأشعة
+              <i class="i-item fa-solid fa-money-check-dollar"></i>
+              <div class="badge-count">0</div>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="">
+              المختبر
+              <i class="i-item fa-solid fa-money-check-dollar"></i>
+              <div class="badge-count">0</div>
+            </a>
+          </li>
+          <li>
+            <a class="item" href="">
+              تسديد الزيارات
+              <i class="i-item fa-solid fa-money-check-dollar"></i>
+              <div class="badge-count">0</div>
+            </a>
+          </li>
+        </ul>
+        <div class="notification d-flex">
+          <ul class="list-item">
+            <li>
+              <a class="item" href="">
+                الاشعارات
+                <i class="i-item fa-solid fa-bell"></i>
+                <div class="badge-count">0</div>
+              </a>
+            </li>
+            <li>
+              <a class="lang me-2" href=""> <i class="fa-solid fa-language"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End Bottom Nav Bar -->
+  <!-- Start Section -->
+  <section wire:id="pd2hBLD8FinuJeZna1b3" class="addPatient-section py-5">
+    <div class="container">
+      <div class="alert alert-warning fs-13px" role="alert">
+        خدمة حجز موعد للزائر عبر الموقع او عبر هاتف العيادة ويتم إكمال باقي بينات المريض عند حضوره للعيادة
+      </div>
+      <h4 class="main-heading ">حجز موعد لزائر</h4>
+    </div>
+    <div class="container pt-0 p-3 bg-white vh-min-100 rounded-3 shadow">
+      <div class="addPatient-content p-4">
+        <h4 class="section-title p-3 rounded-3 mb-4 text-center">
+          المعلومات الشخصية للزائر
+        </h4>
+        <form class="Patient-form-data">
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <div class="fild-control">
+                <input type="text" id="Patient-id" class="form-control Patient-id" placeholder="رقم الهوية ( 10 ارقام ) ">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="fild-control">
+                <input type="text" id="Patient-name" class="form-control Patient-name" placeholder="الاسم">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="fild-control">
+                <input type="tel" id="Patient-phone" class="form-control Patient-phone" placeholder="الهاتف">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="fild-control">
+                <select class="gender form-control" id="gender">
+                  <option value="">الجنس</option>
+                  <option value="male">ذكر</option>
+                  <option value="female">انثى</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="fild-control">
+                <label for="doctor_id" class="small-label">طبيب</label>
+                <select name="doctor_id" wire:model="doctor_id" id="doctor_id" class="main-select w-100">
+                  <option selected="">أختر طبيب</option>
+                  <option value="3">دكتور 1</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="fild-control">
+                <label for="clinic_id" class="small-label">عيادة</label>
+                <select name="clinic_id" id="clinic_id" class="main-select w-100">
+                  <option selected="">أختر عيادة</option>
+                  <option value="1">أسنان</option>
+                  <option value="2">مختبر</option>
+                  <option value="3">أشعة</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="fild-control">
+                <label for="appointment_time" class="small-label">وقت الموعد</label>
+                <input type="time" name="appointment_time" id="appointment_time"
+                  class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="fild-control">
+                <label for="appointment_date" class="small-label mb-2">تاريخ الموعد</label>
+                <input type="date" name="appointment_date" id="appointment_date"
+                  class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="w-100 d-flex align-items-center justify-content-center mt-2">
+            <button class="send-data btn btn-success w-25">حفظ البيانات</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- End Section -->
+  <!-- Start Footer -->
+  <div class="footer-bottom py-3 not-print">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <p>جميع الحقوق محفوظة © لـ 2022</p>
+        <div class="about_data d-flex align-items-center justify-content-center">
+          <p class="ms-2">برنامج سي - إدارة العيادات الطبية 0.0.1</p>
+          <img class="alt_image" src="./img/footer/doc.png" alt="image">
+        </div>
+        <a href="https://www.const-tech.org/">
+          <img src="./img/footer/copy.png" alt="logo">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- ENd Footer -->
+  <!-- Js Files -->
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
+</html>

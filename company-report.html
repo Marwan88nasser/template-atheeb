@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تقرير شركة التقسيط</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main Faile Css  -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start Top Nav Bar -->
+  <nav class="top-nav not-print">
+    <div class="container">
+      <a href="#" class="tog-show" data-show=".top-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+      <ul class="list-item">
+        <li>
+          <div class="dropdown-hover item">
+            <a class="d-flex">
+              الادارة
+              <div class="arrow-icon me-1">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </a>
+            <ul class="listis-item " id="dropdown-lang">
+              <li class="item-drop">
+                <a href="departments.html">
+                  <p class="text">الاقسام</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="products.html">
+                  <p class="text">الخدمات العلاجيه</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="offers.html">
+                  <p class="text">العروض</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="forms.html">
+                  <p class="text">النماذج الطبية</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="purchases.html" class="d-flex">
+            المشتريات
+          </a>
+        </li>
+        <li>
+          <a href="appointments-transferred.html" class="d-flex">
+            المرضى المحولين
+            <div class="badge-count me-1 mb-1">0</div>
+          </a>
+        </li>
+        <li>
+          <a href="accounting.html" class="d-flex">
+            المحاسبة
+          </a>
+        </li>
+        <li>
+          <a href="guide.html" class="d-flex">
+            دليل الاستخدام
+          </a>
+        </li>
+      </ul>
+      <ul class="d-flex gap-3 align-items-center">
+        <li>
+          <a href="notice.html" class="d-flex">
+            <div class=" position-relative d-flex">
+              <i class="i-item fa-solid fa-bell fs-5"></i>
+              <div class="badge-count position-absolute top-0 start-0 translate-middle">
+                0
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="d-flex">
+            <i class="fa-solid fa-language fs-5"></i>
+          </a>
+        </li>
+        <li>
+          <div class="dropdown-hover" data-show="dropdown-lang">
+            <div class="icon-drop">
+              <i class="fa-solid fa-user icon"></i>
+            </div>
+            <p class="text">محمد السيد</p>
+            <div class="arrow-icon">
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <ul class="listis-item" id="dropdown-lang">
+              <li class="item-drop">
+                <a href="#">
+                  <form class="w-100" action="" method="" id="logout-form">
+                    <button class="border-0 bg-transparent p-0">
+                      <p class="text  d-flex">تسجيل الخروج</p>
+                    </button>
+                  </form>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Top Nav Bar -->
+  <!-- Start Bottom Nav Bar -->
+  <nav class="bottom-nav not-print">
+    <div class="container">
+      <a href="#" class="tog-show" data-show=".bottom-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+      <ul class="list-item">
+        <li>
+          <a class="item" href="index.html">
+            الرئيسية
+            <i class="i-item fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="patients.html">
+            المرضى
+            <i class="i-item fa-solid fa-users"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="today_appointments.html">
+            مواعيد اليوم
+            <i class="i-item fa-solid fa-calendar-day"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="appointments.html">
+            المواعيد
+            <i class="i-item fa-solid fa-calendar-days"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="invoices.html">
+            الفواتير
+            <i class="i-item fa-solid fa-file-invoice-dollar"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="diagnoses.html">
+            التشخيصات
+            <i class="i-item fa-solid fa-comment-medical"></i>
+          </a>
+        </li>
+        <li>
+          <div class="dropdown-hover item">
+            <span class="d-flex align-items-center">
+              <div>
+                الأشعة
+                و
+                المختبر
+                <i class="i-item fa-solid fa-stethoscope"></i>
+              </div>
+              <div class="arrow-icon me-2">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </span>
+            <ul class="listis-item " id="dropdown-lang">
+              <li class="item-drop">
+                <a href="scan-requests.html">
+                  <span class="text d-flex align-items-center gap-1">
+                    الأشعة
+                    <div class="badge-count position-static">
+                      0
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="lab-requests.html">
+                  <span class="text d-flex align-items-center gap-1">
+                    المختبر
+                    <div class="badge-count position-static">
+                      0
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="item" href="pay-visit.html">
+            تسديد الزيارات
+            <i class="i-item fa-solid fa-money-check-dollar"></i>
+            <div class="badge-count">0</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Bottom Nav Bar -->
+  <!-- Start Section -->
+  <section class="main-section">
+    <div class="container">
+      <div class="d-flex align-items-center gap-2 mb-3">
+        <a href="accounting.html" class="btn bg-main-color text-white">
+          <i class="fas fa-angle-right"></i>
+        </a>
+        <h4 class="main-heading mb-0">تقرير شركة التقسيط</h4>
+      </div>
+      <div class="box-content">
+        <div class="row g-2 mb-2">
+          <div class="col-12 col-md-3">
+            <div class="box-info">
+              <label for="duration-from" class="small-label">من</label>
+              <input type="date" class="form-control" id="duration-from">
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="box-info">
+              <label for="duration-to" class="small-label">الى</label>
+              <input type="date" class="form-control" id="duration-to">
+            </div>
+          </div>
+          <div class="col-12 col-md-6 d-flex gap-1 justify-content-end align-items-end">
+            <button class="btn btn-sm btn-outline-warning" id="btn-prt-content">
+              <i class="fa-solid fa-print"></i>
+              طباعة
+            </button>
+            <button class="btn btn-sm btn-outline-info" id="export-btn">
+              <i class="fa-solid fa-file-excel"></i>
+              تصدير Excel
+            </button>
+          </div>
+        </div>
+        <div id="prt-content">
+          <div class="box-header-invoice ">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <h6 class="text-center"><b> Atheeb Clinic</b></h6>
+              </div>
+              <div class="col-md-4 ">
+                <small class="mb-1 d-block"><b>الرقم الضريبي: </b>310954677800003</small>
+                <small class="mb-1 d-block">
+                  <b> العنوان: </b> حي طويق
+                </small>
+                <small class="mb-1 d-block"><b> الهاتف: </b>0599001818</small>
+              </div>
+              <div class="text-center col-md-4  d-flex align-items-center justify-content-center">
+                <img class="img-fluid img-logo mx-auto" src="" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table main-table" id="data-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>الشركة</th>
+                  <th>المبلغ</th>
+                  <th>العمولة الادارية</th>
+                  <th>أقل من 2500</th>
+                  <th>أكثر من 2500</th>
+                  <th>صافي المبلغ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2</td>
+                  <td></td>
+                  <td>200</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <td>المجموع</td>
+                  <td>-</td>
+                  <td>200</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>200</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section -->
+  <!-- Start Footer -->
+  <div class="footer-bottom py-3 not-print">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <p>جميع الحقوق محفوظة © لـ 2022</p>
+        <div class="about_data d-flex align-items-center justify-content-center">
+          <p class="ms-2">برنامج سي - إدارة العيادات الطبية 0.0.1</p>
+          <img class="alt_image" src="./img/footer/doc.png" alt="image">
+        </div>
+        <a href="https://www.const-tech.org/">
+          <img src="./img/footer/copy.png" alt="logo">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- ENd Footer -->
+  <!-- Js Files -->
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
+</html>

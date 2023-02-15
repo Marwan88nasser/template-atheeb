@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اضافة موعد</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main Faile Css  -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start Top Nav Bar -->
+  <nav class="top-nav not-print">
+    <div class="container">
+      <a href="#" class="tog-show" data-show=".top-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+      <ul class="list-item">
+        <li>
+          <div class="dropdown-hover item">
+            <a class="d-flex">
+              الادارة
+              <div class="arrow-icon me-1">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </a>
+            <ul class="listis-item " id="dropdown-lang">
+              <li class="item-drop">
+                <a href="departments.html">
+                  <p class="text">الاقسام</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="products.html">
+                  <p class="text">الخدمات العلاجيه</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="offers.html">
+                  <p class="text">العروض</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="forms.html">
+                  <p class="text">النماذج الطبية</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="purchases.html" class="d-flex">
+            المشتريات
+          </a>
+        </li>
+        <li>
+          <a href="appointments-transferred.html" class="d-flex">
+            المرضى المحولين
+            <div class="badge-count me-1 mb-1">0</div>
+          </a>
+        </li>
+        <li>
+          <a href="accounting.html" class="d-flex">
+            المحاسبة
+          </a>
+        </li>
+        <li>
+          <a href="guide.html" class="d-flex">
+            دليل الاستخدام
+          </a>
+        </li>
+      </ul>
+      <ul class="d-flex gap-3 align-items-center">
+        <li>
+          <a href="notice.html" class="d-flex">
+            <div class=" position-relative d-flex">
+              <i class="i-item fa-solid fa-bell fs-5"></i>
+              <div class="badge-count position-absolute top-0 start-0 translate-middle">
+                0
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="d-flex">
+            <i class="fa-solid fa-language fs-5"></i>
+          </a>
+        </li>
+        <li>
+          <div class="dropdown-hover" data-show="dropdown-lang">
+            <div class="icon-drop">
+              <i class="fa-solid fa-user icon"></i>
+            </div>
+            <p class="text">محمد السيد</p>
+            <div class="arrow-icon">
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <ul class="listis-item" id="dropdown-lang">
+              <li class="item-drop">
+                <a href="#">
+                  <form class="w-100" action="" method="" id="logout-form">
+                    <button class="border-0 bg-transparent p-0">
+                      <p class="text  d-flex">تسجيل الخروج</p>
+                    </button>
+                  </form>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Top Nav Bar -->
+  <!-- Start Bottom Nav Bar -->
+  <nav class="bottom-nav not-print">
+    <div class="container">
+      <a href="#" class="tog-show" data-show=".bottom-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+      <ul class="list-item">
+        <li>
+          <a class="item" href="index.html">
+            الرئيسية
+            <i class="i-item fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="patients.html">
+            المرضى
+            <i class="i-item fa-solid fa-users"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="today_appointments.html">
+            مواعيد اليوم
+            <i class="i-item fa-solid fa-calendar-day"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="appointments.html">
+            المواعيد
+            <i class="i-item fa-solid fa-calendar-days"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="invoices.html">
+            الفواتير
+            <i class="i-item fa-solid fa-file-invoice-dollar"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="diagnoses.html">
+            التشخيصات
+            <i class="i-item fa-solid fa-comment-medical"></i>
+          </a>
+        </li>
+        <li>
+          <div class="dropdown-hover item">
+            <span class="d-flex align-items-center">
+              <div>
+                الأشعة
+                و
+                المختبر
+                <i class="i-item fa-solid fa-stethoscope"></i>
+              </div>
+              <div class="arrow-icon me-2">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </span>
+            <ul class="listis-item " id="dropdown-lang">
+              <li class="item-drop">
+                <a href="scan-requests.html">
+                  <span class="text d-flex align-items-center gap-1">
+                    الأشعة
+                    <div class="badge-count position-static">
+                      0
+                    </div>
+                  </span>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="lab-requests.html">
+                  <span class="text d-flex align-items-center gap-1">
+                    المختبر
+                    <div class="badge-count position-static">
+                      0
+                    </div>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="item" href="pay-visit.html">
+            تسديد الزيارات
+            <i class="i-item fa-solid fa-money-check-dollar"></i>
+            <div class="badge-count">0</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Bottom Nav Bar -->
+  <!-- Start Section -->
+  <section class="main-section users">
+    <div class="container">
+      <h4 class="main-heading mb-4">
+        اضافة موعد
+      </h4>
+      <div class="box-content">
+          <div class="d-flex justify-content-end mb-1">
+            <a href="appointments.html" class="btn-main-sm">المواعيد</a>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-4 ">
+              <label for="" class="small-label">بحث برقم الهويه او رقم الجوال</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-md-4 ">
+              <label for="patient_id" class="small-label">المريض</label>
+              <input type="text" readonly="" id="" class="form-control w-100">
+            </div>
+
+            <div class="col-md-4 ">
+              <label for="" class="small-label">الهاتف</label>
+              <input type="tel" name="phone" readonly="" id="" class="form-control w-100">
+            </div>
+            <div class="col-md-4">
+              <label for="clinic_id" class="small-label">عيادة</label>
+              <select id="clinic_id" class="main-select w-100">
+                <option>أختر عيادة</option>
+                <option value="1">أسنان</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="doctor_id" class="small-label">طبيب</label>
+              <select id="doctor_id" class="main-select w-100">
+                <option>أختر طبيب</option>
+              </select>
+            </div>
+            <div class="col-md-4 ">
+              <label for="appointment_status" class="small-label">حالة الموعد</label>
+              <select id="appointment_status" class="main-select w-100">
+                <option value="">اختر</option>
+                <option value="pending">
+                  بالانتظار</option>
+                <option value="confirmed">
+                  مؤكد</option>
+                <option value="cancelled">
+                  ملغية</option>
+                <option value="transferred">
+                  محول</option>
+                <option value="examined">
+                  تم الكشف</option>
+              </select>
+            </div>
+            <div class="col-md-4 ">
+              <label for="appointment_time" class="small-label">الفترة</label>
+              <select id="" class="form-control">
+                <option value="">الفترة</option>
+                <option value="morning">الصباحية</option>
+                <option value="evening">المسائية</option>
+              </select>
+            </div>
+            <div class="col-md-4 d-flex flex-column justify-content-end">
+              <label for="appointment_date" class="small-label">تاريخ الموعد</label>
+              <input type="date" id="appointment_date" class="form-control">
+            </div>
+            <div class="col-md-4 ">
+              <label for="appointment_time" class="small-label">وقت الموعد</label>
+              <select id="" class="form-control">
+                <option value="">وقت الموعد</option>
+              </select>
+            </div>
+            <div class="col-4 d-flex align-items-end">
+              <button type="submit" class="btn btn-sm btn-success w-100">حفظ</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section -->
+  <!-- Start Footer -->
+  <div class="footer-bottom py-3 not-print">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <p>جميع الحقوق محفوظة © لـ 2022</p>
+        <div class="about_data d-flex align-items-center justify-content-center">
+          <p class="ms-2">برنامج سي - إدارة العيادات الطبية 0.0.1</p>
+          <img class="alt_image" src="./img/footer/doc.png" alt="image">
+        </div>
+        <a href="https://www.const-tech.org/">
+          <img src="./img/footer/copy.png" alt="logo">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- ENd Footer -->
+  <!-- Js Files -->
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
+</html>
